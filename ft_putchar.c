@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mde-alme <mde-alme@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/11 18:20:37 by mde-alme          #+#    #+#             */
-/*   Updated: 2026/11/11 19:12:53 by mde-alme         ###   ########.fr       */
+/*   Updated: 2026/11/22 17:05:00 by mde-alme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar_fd(char c, int fd);
+#include "libftprintf.h"
+
+int ft_putchar(int c);
 {
-    write (fd, &c, 1);
+    return (write (1, &c, 1));
 }

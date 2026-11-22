@@ -6,9 +6,11 @@
 /*   By: mde-alme <mde-alme@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/22 16:19:50 by mde-alme          #+#    #+#             */
-/*   Updated: 2026/11/22 16:54:33 by mde-alme         ###   ########.fr       */
+/*   Updated: 2026/11/22 17:05:01 by mde-alme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libftprintf.h"
 
 int ft_putnbr(int n)
 {

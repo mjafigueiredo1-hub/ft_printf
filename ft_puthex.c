@@ -6,9 +6,11 @@
 /*   By: mde-alme <mde-alme@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/22 16:38:56 by mde-alme          #+#    #+#             */
-/*   Updated: 2026/11/22 16:51:03 by mde-alme         ###   ########.fr       */
+/*   Updated: 2026/11/22 17:05:24 by mde-alme         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libftprintf.h"
 
 int ft_puthex(unsigned int hex, char c)
 {
@@ -22,6 +24,6 @@ int ft_puthex(unsigned int hex, char c)
         base = "0123456789ABCDEF";
     if (hex >= 16)
 		len += ft_puthex((hex / 16), c);
-	len += write(1, &base[hex % 16], 1);
+	len += putchar(base[hex % 16]);
 	return (len);
 }
